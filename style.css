@@ -3,7 +3,7 @@ body {
   color: white;
   display: flex;
   justify-content: center;
-  padding-top: 100px
+  padding-top: 4rem
 }
 
 
@@ -12,7 +12,7 @@ button {
   color: white;
   border: none;
   padding: 0px;
-  margin: 10px;
+  margin: 0rem;
   cursor: pointer;
 
 }
@@ -22,8 +22,9 @@ button {
 .scissors-img {
   /* background-color: black; */
   border: solid white 3px;
-  height: 90px;
-  padding: 20px;
+  height: 2rem;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 50%;
 
 }
@@ -35,12 +36,12 @@ button {
 
 .paper-img {
   padding: 20px;
-  height: 90px;
+  height: 2rem;
 }
 
 .scissors-img {
   padding: 20px 16px;
-  height: 90px;
+  height: 2rem;
 }
 
 .img-1 {
@@ -55,4 +56,42 @@ button {
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
+}
+
+@media only screen and (max-width:320px) {
+  body {
+    padding-top: 1rem
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0px;
+    margin: 0rem;
+    cursor: pointer;
+
+  }
+
+  .rock-img,
+  .paper-img,
+  .scissors-img {
+    /* background-color: black; */
+    border: solid white 2px;
+    height: 2rem;
+    padding: 0.4rem;
+    margin: 0.3rem;
+    border-radius: 50%;
+
+  }
+
+  .rock-img,
+  .paper-img,
+  .scissors-img {
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+  .img-1 {
+  height: 2rem;
+}
 }

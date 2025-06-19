@@ -9,27 +9,35 @@
 </head>
 
 <body>
-  <div>
-    <button class="rock-button"><img src="images/Rock-emoji.png" class="rock-img" alt="">
-    </button>
+  <div class="img-container">
+    <div class="btn-div">
 
-    <button class=" paper-button"><img src="images/Paper-emoji.png" class="paper-img" alt=""></button>
+      <button class="rock-button"><img src="images/Rock-emoji.png" class="rock-img" alt="">
+      </button>
 
-    <button class=" scissor-button"><img src="images/Scissors-emoji.png" class="scissors-img" alt=""></button>
+      <button class=" paper-button"><img src="images/Paper-emoji.png" class="paper-img" alt=""></button>
 
-    <p class="js-result"></p>
-    <p class="js-move"> </p>
-    <p class="js-score"></p>
-    <button onclick="
+      <button class=" scissor-button"><img src="images/Scissors-emoji.png" class="scissors-img" alt=""></button>
+    </div>
+    <div>
+
+      <p class="js-result"></p>
+      <p class="js-move"> </p>
+      <p class="js-score"></p>
+    </div>
+    <div>
+
+      <button onclick="
      score.wins = 0;
-    score.lose = 0;
-    score.Tie = 0;
-localStorage.removeItem('score');
-updateScoreElement();
-    " class="reset-btn">Reset
-    </button>
-    <button class="Auto-play-button" onclick="
+     score.lose = 0;
+     score.Tie = 0;
+     localStorage.removeItem('score');
+     updateScoreElement();
+     " class="reset-btn">Reset
+      </button>
+      <button class="Auto-play-button" onclick="
         autoPlay();">Auto play</button>
+    </div>
   </div>
   <script src="script.js"></script>
 
